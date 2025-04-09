@@ -1,0 +1,22 @@
+[0401/153120.972333:ERROR:sandbox_linux.cc(374)] InitializeSandbox() called with multiple threads in process gpu-process.
+[0401/153129.003604:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153129.082118:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153129.344980:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153129.468098:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153129.684224:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:108
+[0401/153129.684282:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153129.786561:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153129.962745:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153151.037892:ERROR:object_proxy.cc(642)] Failed to call method: org.kde.KWallet.isEnabled: object_path= /modules/kwalletd: org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[0401/153151.037969:ERROR:kwallet_dbus.cc(100)] Error contacting kwalletd (isEnabled)
+[0401/153151.038175:ERROR:object_proxy.cc(642)] Failed to call method: org.kde.KLauncher.start_service_by_desktop_name: object_path= /KLauncher: org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[0401/153151.038201:ERROR:kwallet_dbus.cc(72)] Error contacting klauncher to start kwalletd
+[0401/153151.038214:WARNING:key_storage_linux.cc(209)] OSCrypt tried KWallet but couldn't initialise.
+[0401/153151.038398:ERROR:object_proxy.cc(642)] Failed to call method: org.kde.KWallet.close: object_path= /modules/kwalletd: org.freedesktop.DBus.Error.ServiceUnknown: The name is not activatable
+[0401/153151.038427:ERROR:kwallet_dbus.cc(418)] Error contacting kwalletd (close)
+[0401/153651.904069:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153652.104301:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153652.203586:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153652.428678:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153652.629009:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0
+[0401/153652.754128:WARNING:keyboard_code_conversion_x.cc(1463)] Unknown keycode:0

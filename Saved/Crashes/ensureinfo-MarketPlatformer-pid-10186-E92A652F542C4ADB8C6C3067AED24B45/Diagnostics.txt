@@ -1,0 +1,34 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.13.8-201.nobara.fc41.x86_64 (network name: Grant-Linux)
+Running 8 x86_64 processors (8 logical cores)
+Exception was "Ensure condition failed: !Mesh->IsCompiling()  [File:./Runtime/Engine/Private/Components/StaticMeshComponent.cpp] [Line: 3161] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Engine.so!UStaticMeshComponent::GetNavigationBounds() const::$_0::operator()() const [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/StaticMeshComponent.cpp:3161]
+libUnrealEditor-Engine.so!UStaticMeshComponent::GetNavigationBounds() const [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/StaticMeshComponent.cpp:3161]
+libUnrealEditor-Engine.so!non-virtual thunk to UStaticMeshComponent::GetNavigationBounds() const [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/StaticMeshComponent.cpp:0]
+libUnrealEditor-NavigationSystem.so!FNavigationDataHandler::AddElementToNavOctree(FNavigationDirtyElement const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/NavigationSystem/Private/NavigationDataHandler.cpp:147]
+libUnrealEditor-NavigationSystem.so!FNavigationDataHandler::ProcessPendingOctreeUpdates() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/NavigationSystem/Private/NavigationDataHandler.cpp:576]
+libUnrealEditor-NavigationSystem.so!UNavigationSystemV1::Tick(float) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/NavigationSystem/Private/NavigationSystem.cpp:1460]
+libUnrealEditor-Engine.so!UWorld::Tick(ELevelTick, float) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/LevelTick.cpp:1407]
+libUnrealEditor-UnrealEd.so!UEditorEngine::Tick(float, bool) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/EditorEngine.cpp:1804]
+libUnrealEditor-UnrealEd.so!UUnrealEdEngine::Tick(float, bool) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/UnrealEdEngine.cpp:547]
+UnrealEditor!FEngineLoop::Tick() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5915]
+UnrealEditor!GuardedMain(char16_t const*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x3247)
+libc.so.6!__libc_start_main(+0x8a)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

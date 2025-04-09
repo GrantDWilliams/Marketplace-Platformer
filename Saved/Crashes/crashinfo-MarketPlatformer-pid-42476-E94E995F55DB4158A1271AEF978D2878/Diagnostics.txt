@@ -1,0 +1,29 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.13.8-201.nobara.fc41.x86_64 (network name: Grant-Linux)
+Running 8 x86_64 processors (8 logical cores)
+Exception was "SIGABRT: abort() called"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libc.so.6!UnknownFunction(0x6d7e9)
+libc.so.6!pthread_cond_timedwait(+0x170)
+libUnrealEditor-Core.so!FPThreadEvent::Wait(unsigned int, bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Core/Private/GenericPlatform/GenericPlatformProcess.cpp:484]
+libUnrealEditor-RenderCore.so!FRenderCommandFence::Wait(bool) const [/home/ue4/UnrealEngine/Engine/Source/./Runtime/RenderCore/Private/RenderingThread.cpp:1436]
+UnrealEditor!FEngineLoop::Tick() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:6147]
+UnrealEditor!GuardedMain(char16_t const*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x3247)
+libc.so.6!__libc_start_main(+0x8a)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

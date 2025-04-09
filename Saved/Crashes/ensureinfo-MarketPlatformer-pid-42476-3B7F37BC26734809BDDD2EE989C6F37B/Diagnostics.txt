@@ -1,0 +1,30 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.13.8-201.nobara.fc41.x86_64 (network name: Grant-Linux)
+Running 8 x86_64 processors (8 logical cores)
+Exception was "Ensure condition failed: !PersistentLayout->PrimaryArea.IsValid()  [File:./Runtime/Slate/Private/Framework/Docking/TabManager.cpp] [Line: 932] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Slate.so!FTabManager::PersistLayout() const [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Docking/TabManager.cpp:932]
+libUnrealEditor-Slate.so!FTabManager::SavePersistentLayout() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Docking/TabManager.cpp:957]
+libUnrealEditor-Slate.so!decltype(auto) UE::Core::Private::Tuple::TTupleBase<TIntegerSequence<unsigned int> >::ApplyAfter<FTabManager::RequestSavePersistentLayout()::$_0&, float>(FTabManager::RequestSavePersistentLayout()::$_0&&&, float&&) const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Templates/Tuple.h:309]
+libUnrealEditor-Slate.so!TBaseFunctorDelegateInstance<bool (float), FDefaultDelegateUserPolicy, FTabManager::RequestSavePersistentLayout()::$_0>::Execute(float) const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:862]
+libUnrealEditor-Core.so!FTSTicker::Tick(float) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Core/Private/Containers/Ticker.cpp:110]
+UnrealEditor!FEngineLoop::Tick() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:6161]
+UnrealEditor!GuardedMain(char16_t const*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x3247)
+libc.so.6!__libc_start_main(+0x8a)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

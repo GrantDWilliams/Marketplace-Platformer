@@ -1,0 +1,53 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.13.8-201.nobara.fc41.x86_64 (network name: Grant-Linux)
+Running 8 x86_64 processors (8 logical cores)
+Exception was "Ensure condition failed: false  [File:./Runtime/Engine/Private/UnrealEngine.cpp] [Line: 17169] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Engine.so!FAggressiveReplacementAuditArchive::operator<<(UObject*&)::'lambda'()::operator()() const [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/UnrealEngine.cpp:17169]
+libUnrealEditor-Engine.so!FAggressiveReplacementAuditArchive::operator<<(UObject*&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/UnrealEngine.cpp:17169]
+libUnrealEditor-CoreUObject.so!FArchiveReplaceObjectRefBase::SerializeObject(UObject*)::FReplaceObjectRefCollector::HandleObjectReference(UObject*&, UObject const*, FProperty const*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/CoreUObject/Private/Serialization/ArchiveUObject.cpp:277]
+libUnrealEditor-Engine.so!FSceneComponentInstanceData::AddReferencedObjects(FReferenceCollector&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/SceneComponent.cpp:2539]
+libUnrealEditor-Engine.so!FPrimitiveComponentInstanceData::AddReferencedObjects(FReferenceCollector&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/PrimitiveComponent.cpp:750]
+libUnrealEditor-Engine.so!FStaticMeshComponentInstanceData::AddReferencedObjects(FReferenceCollector&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/StaticMeshComponent.cpp:111]
+libUnrealEditor-Engine.so!FComponentInstanceDataCache::AddReferencedObjects(FReferenceCollector&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/ComponentInstanceDataCache.cpp:838]
+libUnrealEditor-Engine.so!FComponentInstanceDataCache::AddReferencedObjects(FReferenceCollector&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/ComponentInstanceDataCache.cpp:838]
+libUnrealEditor-Engine.so!AActor::AddReferencedObjects(UObject*, FReferenceCollector&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Actor.cpp:414]
+libUnrealEditor-CoreUObject.so!FArchiveReplaceObjectRefBase::SerializeObject(UObject*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/CoreUObject/Private/Serialization/ArchiveUObject.cpp:304]
+libUnrealEditor-Engine.so!FArchiveReplaceObjectRef<UObject>::SerializeSearchObject() [/home/ue4/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/Serialization/ArchiveReplaceObjectRef.h:232]
+libUnrealEditor-Engine.so!UEngine::CopyPropertiesForUnrelatedObjects(UObject*, UObject*, UEngine::FCopyPropertiesForUnrelatedObjectsParams) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/UnrealEngine.cpp:17409]
+libUnrealEditor-UnrealEd.so!FBlueprintCompileReinstancer::ReplaceInstancesOfClass_Inner(TMap<UClass*, UClass*, FDefaultSetAllocator, TDefaultMapHashableKeyFuncs<UClass*, UClass*, false> > const&, FReplaceInstancesOfClassParameters const&) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/Kismet2/KismetReinstanceUtilities.cpp:2830]
+libUnrealEditor-UnrealEd.so!UEditorEngine::PostUndo(bool) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:1287]
+libUnrealEditor-UnrealEd.so!UEditorEngine::HandleTransactorRedoUndo(FTransactionContext const&, bool, bool) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:1168]
+libUnrealEditor-UnrealEd.so!TBaseUObjectMethodDelegateInstance<false, UEditorEngine, void (FTransactionContext const&, bool), FDefaultDelegateUserPolicy>::ExecuteIfSafe(FTransactionContext const&, bool) const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:665]
+libUnrealEditor-UnrealEd.so!void TMulticastDelegateBase<FDefaultDelegateUserPolicy>::Broadcast<IBaseDelegateInstance<void (FTransactionContext const&, bool), FDefaultDelegateUserPolicy>, FTransactionContext const&, bool>(FTransactionContext const&, bool) const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates/MulticastDelegateBase.h:254]
+libUnrealEditor-UnrealEd.so!UTransBuffer::Undo(bool) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/EditorTransaction.cpp:1625]
+libUnrealEditor-UnrealEd.so!UEditorEngine::UndoTransaction(bool) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/EditorServer.cpp:1301]
+libUnrealEditor-Kismet.so!TBaseSPMethodDelegateInstance<false, FBlueprintEditor, (ESPMode)1, void (), FDefaultDelegateUserPolicy>::ExecuteIfSafe() const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUnrealEditor-Slate.so!FUICommandList::ConditionalProcessCommandBindings(FKey, bool, bool, bool, bool, bool) const [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Commands/UICommandList.cpp:235]
+libUnrealEditor-Slate.so!FUICommandList::ProcessCommandBindings(FKeyEvent const&) const [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Commands/UICommandList.cpp:178]
+libUnrealEditor-UnrealEd.so!SStandaloneAssetEditorToolkitHost::OnKeyDown(FGeometry const&, FKeyEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/Toolkits/SStandaloneAssetEditorToolkitHost.cpp:421]
+libUnrealEditor-UnrealEd.so!non-virtual thunk to SStandaloneAssetEditorToolkitHost::OnKeyDown(FGeometry const&, FKeyEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/Toolkits/SStandaloneAssetEditorToolkitHost.cpp:0]
+libUnrealEditor-Slate.so!FSlateApplication::ProcessKeyDownEvent(FKeyEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4785]
+libUnrealEditor-Slate.so!FSlateApplication::OnKeyDown(int, unsigned int, bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:4696]
+libUnrealEditor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:321]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:442]
+UnrealEditor!FEngineLoop::Tick() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5844]
+UnrealEditor!GuardedMain(char16_t const*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x3247)
+libc.so.6!__libc_start_main(+0x8a)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

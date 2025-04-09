@@ -1,0 +1,35 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.13.8-201.nobara.fc41.x86_64 (network name: Grant-Linux)
+Running 8 x86_64 processors (8 logical cores)
+Exception was "SIGSEGV: invalid attempt to write memory at address 0x0000000000000003"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-UnrealEd.so!FLevelEditorViewportClient::TryPlacingAssetObject(ULevel*, UObject*, UE::AssetPlacementUtil::FExtraPlaceAssetOptions const&, FViewportCursorLocation const*) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/LevelEditorViewport.cpp:384]
+libUnrealEditor-UnrealEd.so!FLevelEditorViewportClient::DropObjectsOnActor(FViewportCursorLocation&, TArray<UObject*, TSizedDefaultAllocator<32> > const&, AActor*, int, EObjectFlags, TArray<FTypedElementHandle, TSizedDefaultAllocator<32> >&, FEditorViewportClient::FDropObjectOptions const&) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/LevelEditorViewport.cpp:1283]
+libUnrealEditor-UnrealEd.so!FLevelEditorViewportClient::DropObjectsAtCoordinates(int, int, TArray<UObject*, TSizedDefaultAllocator<32> > const&, TArray<FTypedElementHandle, TSizedDefaultAllocator<32> >&, FEditorViewportClient::FDropObjectOptions const&) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/LevelEditorViewport.cpp:1909]
+libUnrealEditor-LevelEditor.so!SLevelViewport::HandlePlaceDraggedObjects(FGeometry const&, FDragDropEvent const&, bool) [/home/ue4/UnrealEngine/Engine/Source/./Editor/LevelEditor/Private/SLevelViewport.cpp:1067]
+libUnrealEditor-LevelEditor.so!SLevelViewport::OnDragEnter(FGeometry const&, FDragDropEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Editor/LevelEditor/Private/SLevelViewport.cpp:771]
+libUnrealEditor-Slate.so!FSlateApplication::RoutePointerMoveEvent(FWidgetPath const&, FPointerEvent const&, bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5606]
+libUnrealEditor-Slate.so!FSlateApplication::ProcessMouseMoveEvent(FPointerEvent const&, bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:6111]
+libUnrealEditor-Slate.so!FSlateApplication::OnMouseMove() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:6033]
+libUnrealEditor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:393]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:442]
+UnrealEditor!FEngineLoop::Tick() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5844]
+UnrealEditor!GuardedMain(char16_t const*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x3247)
+libc.so.6!__libc_start_main(+0x8a)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
