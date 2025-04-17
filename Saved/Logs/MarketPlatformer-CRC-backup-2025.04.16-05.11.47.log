@@ -1,0 +1,111 @@
+﻿Log file open, 04/16/25 01:11:42
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
+LogConfig: No local boot hotfix file found at: [/home/alphaspectre/.config/Epic/CrashReportClient/Saved/PersistentDownloadDir/HotfixForNextBoot.txt]
+LogInit: ExecutableName: CrashReportClientEditor
+LogInit: Build: UE5-CL-35576357
+LogInit: Platform=Linux
+LogInit: MachineId=da11796184b34a62952dcf9aaf1b8e6f-000003e8
+LogInit: DeviceId=
+LogInit: Engine Version: 5.4.4-35576357+UE5
+LogInit: Compatible Engine Version: 5.4.0-33043543+UE5
+LogInit: Net CL: 33043543
+LogInit: OS: Nobara Linux 41 (KDE Plasma) (6.14.2-200.nobara.fc41.x86_64), CPU: Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz, GPU: NVIDIA GeForce RTX 2080 Ti (NVIDIA UNIX Open Kernel Module for x86_64  570.133.07  Release Build  (dvs-builder@U22-I3-G01-1-1)  Fri Mar 14 12:57:14 UTC 2025)
+LogInit: Compiled (64-bit): Sep  4 2024 02:52:29
+LogInit: Architecture: x64
+LogInit: Compiled with Clang: 16.0.6 (github.com/llvm/llvm-project 7cbf1a2591520c2491aa35339f227775f4d3adf6)
+LogInit: Build Configuration: Shipping
+LogInit: Branch Name: UE5
+LogInit: Command Line:  -Abslog="/run/media/alphaspectre/sda1/Unreal Engine/Projects/Marketplace-Platformer/Saved/Logs/MarketPlatformer-CRC.log" "/run/media/alphaspectre/sda1/Unreal Engine/Projects/Marketplace-Platformer/Saved/Crashes/crashinfo-MarketPlatformer-pid-20694-1E1A61C717A4494D9B7DE1BC13CC9FED/"
+LogInit: Base Directory: /run/media/alphaspectre/sda1/Unreal Engine/Instances/dev-5.4.4/Engine/Binaries/Linux/
+LogInit: Allocator: Mimalloc
+LogInit: Installed Engine Build: 1
+LogInit: This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
+LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2025.04.16-05.11.42:540][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
+[2025.04.16-05.11.42:540][  0]LogConfig: Set CVar [[memory.MemoryPressureCriticalThresholdMB:512]]
+[2025.04.16-05.11.42:540][  0]LogInit: Unix hardware info:
+[2025.04.16-05.11.42:540][  0]LogInit:  - we are the first instance of this executable
+[2025.04.16-05.11.42:540][  0]LogInit:  - this process' id (pid) is 92499, parent process' id (ppid) is 20694
+[2025.04.16-05.11.42:540][  0]LogInit:  - we are not running under debugger
+[2025.04.16-05.11.42:540][  0]LogInit:  - machine network name is 'Grant-Linux'
+[2025.04.16-05.11.42:540][  0]LogInit:  - user name is 'alphaspectre' (alphaspectre)
+[2025.04.16-05.11.42:540][  0]LogInit:  - we're logged in locally
+[2025.04.16-05.11.42:540][  0]LogInit:  - we're running with rendering
+[2025.04.16-05.11.42:540][  0]LogInit:  - CPU: GenuineIntel 'Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz' (signature: 0x906EC)
+[2025.04.16-05.11.42:540][  0]LogInit:  - Number of physical cores available for the process: 8
+[2025.04.16-05.11.42:540][  0]LogInit:  - Number of logical cores available for the process: 8
+[2025.04.16-05.11.42:540][  0]LogInit:  - GPU Brand Info: NVIDIA GeForce RTX 2080 Ti (NVIDIA UNIX Open Kernel Module for x86_64  570.133.07  Release Build  (dvs-builder@U22-I3-G01-1-1)  Fri Mar 14 12:57:14 UTC 2025)
+[2025.04.16-05.11.42:540][  0]LogInit:  - Memory allocator used: Mimalloc
+[2025.04.16-05.11.42:540][  0]LogInit:  - This is an internal build.
+[2025.04.16-05.11.42:540][  0]LogCore: Skipped benchmarking clocks because the engine is running in a standalone program mode - CLOCK_MONOTONIC will be used.
+[2025.04.16-05.11.42:540][  0]LogInit: Unix-specific commandline switches:
+[2025.04.16-05.11.42:540][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2025.04.16-05.11.42:540][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2025.04.16-05.11.42:540][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2025.04.16-05.11.42:540][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2025.04.16-05.11.42:540][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2025.04.16-05.11.42:540][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2025.04.16-05.11.42:540][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2025.04.16-05.11.42:540][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2025.04.16-05.11.42:540][  0]LogInit:  -crashhandlerstacksize - Allows setting crash handler stack sizes (204800)
+[2025.04.16-05.11.42:540][  0]LogInit:  -noexclusivelockonwrite - disables marking files created by the engine as exclusive locked while the engine has them opened
+[2025.04.16-05.11.42:540][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2025.04.16-05.11.42:540][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2025.04.16-05.11.42:540][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2025.04.16-05.11.42:540][  0]LogInit:  -allowsyscallfilterfile=PATH_TO_FILE - sets up a system call filter allow list. any invalid syscall in this list *will* cause a crash
+[2025.04.16-05.11.42:540][  0]LogInit:  - Physical RAM available (not considering process quota): 32 GB (32006 MB, 32775008 KB, 33561608192 bytes)
+[2025.04.16-05.11.42:540][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1
+[2025.04.16-05.11.42:540][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2025.04.16-05.11.42:540][  0]LogInit:  - PageSize 4096
+[2025.04.16-05.11.42:540][  0]LogInit:  - BinnedPageSize 65536
+[2025.04.16-05.11.42:542][  0]LogUObjectArray: 475 objects as part of root set at end of initial load.
+[2025.04.16-05.11.42:542][  0]LogUObjectArray: 0 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2025.04.16-05.11.42:542][  0]LogUObjectAllocator: 80416 out of 0 bytes used by permanent object pool.
+[2025.04.16-05.11.42:542][  0]LogUObjectArray: CloseDisregardForGC: 475/475 objects in disregard for GC pool
+[2025.04.16-05.11.42:542][  0]LogInit: Using OS detected language (en-US).
+[2025.04.16-05.11.42:542][  0]LogInit: Using OS detected locale (en-US).
+[2025.04.16-05.11.42:542][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so 'en' will be used for the language.
+[2025.04.16-05.11.42:561][  0]LogInit: Using OS detected language (en-US).
+[2025.04.16-05.11.42:561][  0]LogInit: Using OS detected locale (en-US).
+[2025.04.16-05.11.42:561][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2025.04.16-05.11.42:561][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the locale.
+[2025.04.16-05.11.42:561][  0]LogPackageLocalizationCache: Processed 2 localized package path(s) for 1 prioritized culture(s) in 0.000025 seconds
+[2025.04.16-05.11.42:562][  0]CrashReportCoreLog: Display: Applying project settings from '/run/media/alphaspectre/sda1/Unreal Engine/Projects/Marketplace-Platformer/Saved/Crashes/crashinfo-MarketPlatformer-pid-20694-1E1A61C717A4494D9B7DE1BC13CC9FED/CrashReportClient.ini'.
+[2025.04.16-05.11.42:562][  0]CrashReportCoreLog: CrashReportClientVersion=1.0
+[2025.04.16-05.11.42:562][  0]CrashReportCoreLog: CrashReportReceiver disabled
+[2025.04.16-05.11.42:562][  0]CrashReportCoreLog: DataRouter disabled
+[2025.04.16-05.11.42:563][  0]LogInit: Initializing SDL.
+[2025.04.16-05.11.42:630][  0]LogInit: Initialized SDL 2.24.0 revision:  (compiled against 2.24.0)
+[2025.04.16-05.11.42:630][  0]LogInit: Using SDL video driver 'x11'
+[2025.04.16-05.11.42:639][  0]LogSlate: New Slate User Created. Platform User Id 0, User Index 0, Is Virtual User: 0
+[2025.04.16-05.11.42:639][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2025.04.16-05.11.42:639][  0]LogSlate: Using FreeType 2.10.0
+[2025.04.16-05.11.42:640][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2025.04.16-05.11.42:640][  0]LogInit: Using SDL_WINDOW_OPENGL
+[2025.04.16-05.11.42:719][  0]LogInit: FSlateOpenGLContext::Initialize - creating OpenGL 2.1 context
+[2025.04.16-05.11.42:751][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png' error.
+[2025.04.16-05.11.42:751][  0]LogSlateOpenGL: Could not find file for Slate texture: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png] '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png'
+[2025.04.16-05.11.42:751][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png' error.
+[2025.04.16-05.11.42:751][  0]LogSlateOpenGL: Could not find file for Slate texture: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png] '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png'
+[2025.04.16-05.11.42:751][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png' error.
+[2025.04.16-05.11.42:751][  0]LogSlateOpenGL: Could not find file for Slate texture: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png] '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png'
+[2025.04.16-05.11.42:773][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2025.04.16-05.11.42:773][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2025.04.16-05.11.42:813][  0]LogInit: FSlateOpenGLContext::Initialize - creating OpenGL 2.1 context
+[2025.04.16-05.11.42:818][  0]LogSlate: Took 0.000440 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2025.04.16-05.11.42:819][  0]LogSlate: Took 0.000473 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2025.04.16-05.11.42:821][  0]LogSlate: Took 0.000572 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2025.04.16-05.11.47:031][  0]LogSlate: Request Window 'MarketPlatformer Crash Reporter' being destroyed
+[2025.04.16-05.11.47:031][  0]LogSlate: Window 'MarketPlatformer Crash Reporter' being destroyed
+[2025.04.16-05.11.47:038][  0]LogCore: Engine exit requested (reason: OnRequestExit)
+[2025.04.16-05.11.47:041][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
+[2025.04.16-05.11.47:041][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
+[2025.04.16-05.11.47:047][  0]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2025.04.16-05.11.47:047][  0]LogCore: Engine exit requested (reason: CrashReportClientApp RequestExit; note: exit was already requested)
+[2025.04.16-05.11.47:047][  0]LogExit: Preparing to exit.
+[2025.04.16-05.11.47:049][  0]LogExit: Object subsystem successfully closed.
+[2025.04.16-05.11.47:050][  0]LogPakFile: Destroying PakPlatformFile
+[2025.04.16-05.11.47:051][  0]LogExit: Exiting.
+[2025.04.16-05.11.47:051][  0]LogInit: Tearing down SDL.
+[2025.04.16-05.11.47:061][  0]Log file closed, 04/16/25 01:11:47
