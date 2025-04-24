@@ -1,0 +1,70 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.14.3-200.nobara.fc41.x86_64 (network name: Grant-Linux)
+Running 8 x86_64 processors (8 logical cores)
+Exception was "Ensure condition failed: KnownStaticMesh == StaticMesh  [File:./Runtime/Engine/Private/Components/StaticMeshComponent.cpp] [Line: 714] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-Engine.so!UStaticMeshComponent::OutdatedKnownStaticMeshDetected() const::$_0::operator()() const [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/StaticMeshComponent.cpp:707]
+libUnrealEditor-Engine.so!UStaticMeshComponent::GetStaticMesh() const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Engine/Classes/Components/StaticMeshComponent.h:372]
+libUnrealEditor-Engine.so!FStaticMeshComponentInstanceData::FStaticMeshComponentInstanceData(UStaticMeshComponent const*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/StaticMeshComponent.cpp:63]
+libUnrealEditor-Engine.so!void TStructOnScope<FActorComponentInstanceData>::InitializeAs<FStaticMeshComponentInstanceData, void, UStaticMeshComponent const*>(UStaticMeshComponent const*&&) [/home/ue4/UnrealEngine/Engine/Source/Runtime/CoreUObject/Public/UObject/StructOnScope.h:185]
+libUnrealEditor-Engine.so!UStaticMeshComponent::GetComponentInstanceData() const [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/StaticMeshComponent.cpp:2941]
+libUnrealEditor-Engine.so!FComponentInstanceDataCache::FComponentInstanceDataCache(AActor const*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/ComponentInstanceDataCache.cpp:603]
+libUnrealEditor-Engine.so!FActorTransactionAnnotation::Create(AActor const*, bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/ActorEditor.cpp:408]
+libUnrealEditor-Engine.so!AActor::RerunConstructionScripts() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/ActorConstruction.cpp:369]
+libUnrealEditor-Engine.so!UActorComponent::ConsolidatedPostEditChange(FPropertyChangedEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/ActorComponent.cpp:1007]
+libUnrealEditor-Engine.so!USceneComponent::PostEditChangeProperty(FPropertyChangedEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/SceneComponent.cpp:628]
+libUnrealEditor-Engine.so!UPrimitiveComponent::PostEditChangeProperty(FPropertyChangedEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/PrimitiveComponent.cpp:1221]
+libUnrealEditor-Engine.so!UStaticMeshComponent::PostEditChangeProperty(FPropertyChangedEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/StaticMeshComponent.cpp:2058]
+libUnrealEditor-CoreUObject.so!UObject::PostEditChangeChainProperty(FPropertyChangedChainEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/CoreUObject/Private/UObject/Obj.cpp:551]
+libUnrealEditor-Engine.so!UActorComponent::PostEditChangeChainProperty(FPropertyChangedChainEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/ActorComponent.cpp:1061]
+libUnrealEditor-Engine.so!USceneComponent::PostEditChangeChainProperty(FPropertyChangedChainEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/SceneComponent.cpp:659]
+libUnrealEditor-Engine.so!UPrimitiveComponent::PostEditChangeChainProperty(FPropertyChangedChainEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/PrimitiveComponent.cpp:1304]
+libUnrealEditor-Engine.so!UMeshComponent::PostEditChangeChainProperty(FPropertyChangedChainEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/MeshComponent.cpp:192]
+libUnrealEditor-CoreUObject.so!UObject::PropagatePostEditChange(TArray<UObject*, TSizedDefaultAllocator<32> >&, FPropertyChangedChainEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/CoreUObject/Private/UObject/Obj.cpp:735]
+libUnrealEditor-CoreUObject.so!UObject::PostEditChangeChainProperty(FPropertyChangedChainEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/CoreUObject/Private/UObject/Obj.cpp:518]
+libUnrealEditor-Engine.so!UActorComponent::PostEditChangeChainProperty(FPropertyChangedChainEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/ActorComponent.cpp:1061]
+libUnrealEditor-Engine.so!USceneComponent::PostEditChangeChainProperty(FPropertyChangedChainEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/SceneComponent.cpp:659]
+libUnrealEditor-Engine.so!UPrimitiveComponent::PostEditChangeChainProperty(FPropertyChangedChainEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/PrimitiveComponent.cpp:1304]
+libUnrealEditor-Engine.so!UMeshComponent::PostEditChangeChainProperty(FPropertyChangedChainEvent&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Engine/Private/Components/MeshComponent.cpp:192]
+libUnrealEditor-PropertyEditor.so!FPropertyNode::NotifyPostChange(FPropertyChangedEvent&, FNotifyHook*) [/home/ue4/UnrealEngine/Engine/Source/./Editor/PropertyEditor/Private/PropertyNode.cpp:3082]
+libUnrealEditor-PropertyEditor.so!FPropertyValueImpl::ImportText(TArray<FObjectBaseAddress, TSizedDefaultAllocator<32> > const&, TArray<FString, TSizedDefaultAllocator<32> > const&, FPropertyNode*, unsigned int) [/home/ue4/UnrealEngine/Engine/Source/./Editor/PropertyEditor/Private/PropertyHandleImpl.cpp:563]
+libUnrealEditor-PropertyEditor.so!FPropertyValueImpl::ImportText(FString const&, FPropertyNode*, unsigned int) [/home/ue4/UnrealEngine/Engine/Source/./Editor/PropertyEditor/Private/PropertyHandleImpl.cpp:251]
+libUnrealEditor-PropertyEditor.so!FPropertyValueImpl::SetValueAsString(FString const&, unsigned int) [/home/ue4/UnrealEngine/Engine/Source/./Editor/PropertyEditor/Private/PropertyHandleImpl.cpp:861]
+libUnrealEditor-PropertyEditor.so!FPropertyHandleObject::SetValueFromFormattedString(FString const&, unsigned int, bool) [/home/ue4/UnrealEngine/Engine/Source/./Editor/PropertyEditor/Private/PropertyHandleImpl.cpp:4322]
+libUnrealEditor-PropertyEditor.so!FPropertyHandleObject::SetValue(FAssetData const&, unsigned int) [/home/ue4/UnrealEngine/Engine/Source/./Editor/PropertyEditor/Private/PropertyHandleImpl.cpp:4066]
+libUnrealEditor-PropertyEditor.so!SPropertyEditorAsset::SetValue(FAssetData const&) [/home/ue4/UnrealEngine/Engine/Source/./Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyEditorAsset.cpp:1041]
+libUnrealEditor-PropertyEditor.so!TBaseSPMethodDelegateInstance<false, SPropertyEditorAsset, (ESPMode)1, void (FAssetData const&), FDefaultDelegateUserPolicy>::ExecuteIfSafe(FAssetData const&) const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUnrealEditor-PropertyEditor.so!SPropertyMenuAssetPicker::OnAssetSelected(FAssetData const&) [/home/ue4/UnrealEngine/Engine/Source/./Editor/PropertyEditor/Private/UserInterface/PropertyEditor/SPropertyMenuAssetPicker.cpp:347]
+libUnrealEditor-PropertyEditor.so!TBaseSPMethodDelegateInstance<false, SPropertyMenuAssetPicker, (ESPMode)1, void (FAssetData const&), FDefaultDelegateUserPolicy>::ExecuteIfSafe(FAssetData const&) const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUnrealEditor-ContentBrowser.so!SAssetPicker::HandleItemSelectionChanged(FContentBrowserItem const&, ESelectInfo::Type) [/home/ue4/UnrealEngine/Engine/Source/./Editor/ContentBrowser/Private/SAssetPicker.cpp:577]
+libUnrealEditor-ContentBrowser.so!TBaseSPMethodDelegateInstance<false, SAssetPicker, (ESPMode)1, void (FContentBrowserItem const&, ESelectInfo::Type), FDefaultDelegateUserPolicy>::ExecuteIfSafe(FContentBrowserItem const&, ESelectInfo::Type) const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUnrealEditor-ContentBrowser.so!SAssetView::AssetSelectionChanged(TSharedPtr<FAssetViewItem, (ESPMode)1>, ESelectInfo::Type) [/home/ue4/UnrealEngine/Engine/Source/./Editor/ContentBrowser/Private/SAssetView.cpp:3968]
+libUnrealEditor-ContentBrowser.so!TBaseSPMethodDelegateInstance<false, SAssetView, (ESPMode)1, void (TSharedPtr<FAssetViewItem, (ESPMode)1>, ESelectInfo::Type), FDefaultDelegateUserPolicy>::ExecuteIfSafe(TSharedPtr<FAssetViewItem, (ESPMode)1>, ESelectInfo::Type) const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUnrealEditor-ContentBrowser.so!SListView<TSharedPtr<FAssetViewItem, (ESPMode)1> >::Private_SignalSelectionChanged(ESelectInfo::Type) [/home/ue4/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Views/SListView.h:997]
+libUnrealEditor-ContentBrowser.so!STableRow<TSharedPtr<FAssetViewItem, (ESPMode)1> >::OnMouseButtonUp(FGeometry const&, FPointerEvent const&) [/home/ue4/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Views/STableRow.h:594]
+libUnrealEditor-ContentBrowser.so!non-virtual thunk to STableRow<TSharedPtr<FAssetViewItem, (ESPMode)1> >::OnMouseButtonUp(FGeometry const&, FPointerEvent const&) [/home/ue4/UnrealEngine/Engine/Source/Runtime/Slate/Public/Widgets/Views/STableRow.h:0]
+libUnrealEditor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&, FPointerEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5280]
+libUnrealEditor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5857]
+libUnrealEditor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, UE::Math::TVector2<double>) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5813]
+libUnrealEditor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:427]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:442]
+UnrealEditor!FEngineLoop::Tick() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5844]
+UnrealEditor!GuardedMain(char16_t const*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x3247)
+libc.so.6!__libc_start_main(+0x8a)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
