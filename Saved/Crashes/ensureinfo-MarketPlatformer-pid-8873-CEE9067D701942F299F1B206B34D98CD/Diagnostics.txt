@@ -1,0 +1,57 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.14.3-200.nobara.fc41.x86_64 (network name: Grant-Linux)
+Running 8 x86_64 processors (8 logical cores)
+Exception was "Ensure condition failed: false  [File:./Editor/UnrealEd/Private/ObjectTools.cpp] [Line: 3698] "
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-UnrealEd.so!ObjectTools::ForceDeleteObjects(TArray<UObject*, TSizedDefaultAllocator<32> > const&, bool) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/ObjectTools.cpp:3692]
+libUnrealEditor-UnrealEd.so!FAssetDeleteModel::DoForceDelete() [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/AssetDeleteModel.cpp:322]
+libUnrealEditor-UnrealEd.so!SDeleteAssetsDialog::ForceDelete() [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/Dialogs/SDeleteAssetsDialog.cpp:728]
+libUnrealEditor-UnrealEd.so!TBaseSPMethodDelegateInstance<false, SDeleteAssetsDialog, (ESPMode)1, FReply (), FDefaultDelegateUserPolicy>::Execute() const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:281]
+libUnrealEditor-Slate.so!SButton::ExecuteOnClick() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Widgets/Input/SButton.cpp:465]
+libUnrealEditor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&, FPointerEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Widgets/Input/SButton.cpp:390]
+libUnrealEditor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&, FPointerEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5280]
+libUnrealEditor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5857]
+libUnrealEditor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, UE::Math::TVector2<double>) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5813]
+libUnrealEditor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:427]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:442]
+libUnrealEditor-Slate.so!FSlateApplication::TickPlatform(float) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:1590]
+libUnrealEditor-Slate.so!FSlateApplication::AddModalWindow(TSharedRef<SWindow, (ESPMode)1>, TSharedPtr<SWidget const, (ESPMode)1>, bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:2123]
+libUnrealEditor-UnrealEd.so!UEditorEngine::EditorAddModalWindow(TSharedRef<SWindow, (ESPMode)1>) const [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/EditorEngine.cpp:4322]
+libUnrealEditor-UnrealEd.so!ObjectTools::DeleteObjects(TArray<UObject*, TSizedDefaultAllocator<32> > const&, bool, ObjectTools::EAllowCancelDuringDelete) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/ObjectTools.cpp:2899]
+libUnrealEditor-UnrealEd.so!ObjectTools::DeleteAssets(TArray<FAssetData, TSizedDefaultAllocator<32> > const&, bool) [/home/ue4/UnrealEngine/Engine/Source/./Editor/UnrealEd/Private/ObjectTools.cpp:2657]
+libUnrealEditor-ContentBrowserAssetDataSource.so!ContentBrowserAssetData::DeleteItems(IAssetTools*, IAssetRegistry*, UContentBrowserDataSource const*, TArrayView<FContentBrowserItemData const, int>) [/home/ue4/UnrealEngine/Engine/Source/./../Plugins/Editor/ContentBrowser/ContentBrowserAssetDataSource/Source/ContentBrowserAssetDataSource/Private/ContentBrowserAssetDataCore.cpp:848]
+libUnrealEditor-ContentBrowser.so!FAssetContextMenu::ExecuteDelete() [/home/ue4/UnrealEngine/Engine/Source/./Editor/ContentBrowser/Private/AssetContextMenu.cpp:996]
+libUnrealEditor-ContentBrowser.so!SContentBrowser::HandleDeleteCommandExecute() [/home/ue4/UnrealEngine/Engine/Source/./Editor/ContentBrowser/Private/SContentBrowser.cpp:3518]
+libUnrealEditor-ContentBrowser.so!TBaseSPMethodDelegateInstance<false, SContentBrowser, (ESPMode)1, void (), FDefaultDelegateUserPolicy>::ExecuteIfSafe() const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:298]
+libUnrealEditor-Slate.so!FUICommandList::ExecuteAction(TSharedRef<FUICommandInfo const, (ESPMode)1>) const [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Commands/UICommandList.cpp:117]
+libUnrealEditor-Slate.so!SMenuEntryBlock::OnClicked(bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/MultiBox/SMenuEntryBlock.cpp:1158]
+libUnrealEditor-Slate.so!SMenuEntryBlock::OnMenuItemButtonClicked() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/MultiBox/SMenuEntryBlock.cpp:1117]
+libUnrealEditor-Slate.so!TBaseSPMethodDelegateInstance<false, SMenuEntryBlock, (ESPMode)1, FReply (), FDefaultDelegateUserPolicy>::Execute() const [/home/ue4/UnrealEngine/Engine/Source/Runtime/Core/Public/Delegates/DelegateInstancesImpl.h:281]
+libUnrealEditor-Slate.so!SButton::ExecuteOnClick() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Widgets/Input/SButton.cpp:465]
+libUnrealEditor-Slate.so!SButton::OnMouseButtonUp(FGeometry const&, FPointerEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Widgets/Input/SButton.cpp:390]
+libUnrealEditor-Slate.so!SMenuEntryButton::OnMouseButtonUp(FGeometry const&, FPointerEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/MultiBox/SMenuEntryBlock.cpp:431]
+libUnrealEditor-Slate.so!FSlateApplication::RoutePointerUpEvent(FWidgetPath const&, FPointerEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5280]
+libUnrealEditor-Slate.so!FSlateApplication::ProcessMouseButtonUpEvent(FPointerEvent const&) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5857]
+libUnrealEditor-Slate.so!FSlateApplication::OnMouseUp(EMouseButtons::Type, UE::Math::TVector2<double>) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Slate/Private/Framework/Application/SlateApplication.cpp:5813]
+libUnrealEditor-ApplicationCore.so!FLinuxApplication::ProcessDeferredMessage(SDL_Event) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxApplication.cpp:427]
+libUnrealEditor-ApplicationCore.so!FLinuxPlatformApplicationMisc::PumpMessages(bool) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/ApplicationCore/Private/Linux/LinuxPlatformApplicationMisc.cpp:442]
+UnrealEditor!FEngineLoop::Tick() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5844]
+UnrealEditor!GuardedMain(char16_t const*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/Launch.cpp:182]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x3247)
+libc.so.6!__libc_start_main(+0x8a)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!
