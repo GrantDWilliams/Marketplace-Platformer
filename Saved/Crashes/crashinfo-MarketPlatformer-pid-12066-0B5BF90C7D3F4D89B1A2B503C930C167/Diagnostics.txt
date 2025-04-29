@@ -1,0 +1,29 @@
+Generating report for minidump
+
+Application version 5.4.4.0
+ ... built from changelist 35576357
+
+OS version Linux 6.14.3-200.nobara.fc41.x86_64 (network name: Grant-Linux)
+Running 8 x86_64 processors (8 logical cores)
+Exception was "SIGSEGV: invalid attempt to write memory at address 0x0000000000000003"
+
+<SOURCE START>
+<SOURCE END>
+
+<CALLSTACK START>
+libUnrealEditor-VulkanRHI.so!VulkanRHI::FStagingManager::Deinit() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/VulkanRHI/Private/VulkanMemory.cpp:4307]
+libUnrealEditor-VulkanRHI.so!FVulkanDevice::Destroy() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/VulkanRHI/Private/VulkanDevice.cpp:1418]
+libUnrealEditor-VulkanRHI.so!FVulkanDynamicRHI::Shutdown() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/VulkanRHI/Private/VulkanRHI.cpp:641]
+libUnrealEditor-RHI.so!RHIExit() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/RHI/Private/DynamicRHI.cpp:430]
+UnrealEditor!FEngineLoop::Exit() [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/LaunchEngineLoop.cpp:5245]
+UnrealEditor!GuardedMain(char16_t const*) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Launch/Private/Launch.cpp:195]
+libUnrealEditor-UnixCommonStartup.so!CommonUnixMain(int, char**, int (*)(char16_t const*), void (*)()) [/home/ue4/UnrealEngine/Engine/Source/./Runtime/Unix/UnixCommonStartup/Private/UnixCommonStartup.cpp:269]
+libc.so.6!UnknownFunction(0x3247)
+libc.so.6!__libc_start_main(+0x8a)
+UnrealEditor!_start()
+
+<CALLSTACK END>
+
+0 loaded modules
+
+Report end!

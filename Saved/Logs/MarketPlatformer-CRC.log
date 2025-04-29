@@ -1,4 +1,4 @@
-﻿Log file open, 04/28/25 23:54:08
+﻿Log file open, 04/29/25 15:42:29
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
 LogConfig: No local boot hotfix file found at: [/home/alphaspectre/.config/Epic/CrashReportClient/Saved/PersistentDownloadDir/HotfixForNextBoot.txt]
 LogInit: ExecutableName: CrashReportClientEditor
@@ -15,77 +15,97 @@ LogInit: Architecture: x64
 LogInit: Compiled with Clang: 16.0.6 (github.com/llvm/llvm-project 7cbf1a2591520c2491aa35339f227775f4d3adf6)
 LogInit: Build Configuration: Shipping
 LogInit: Branch Name: UE5
-LogInit: Command Line:  -Abslog="/run/media/alphaspectre/sda1/Unreal Engine/Projects/Marketplace-Platformer/Saved/Logs/MarketPlatformer-CRC.log" -Unattended "/run/media/alphaspectre/sda1/Unreal Engine/Projects/Marketplace-Platformer/Saved/Crashes/ensureinfo-MarketPlatformer-pid-8873-BF50F92902934BE0AD7276B3AD66DC75/"
+LogInit: Command Line:  -Abslog="/run/media/alphaspectre/sda1/Unreal Engine/Projects/Marketplace-Platformer/Saved/Logs/MarketPlatformer-CRC.log" "/run/media/alphaspectre/sda1/Unreal Engine/Projects/Marketplace-Platformer/Saved/Crashes/crashinfo-MarketPlatformer-pid-12066-0B5BF90C7D3F4D89B1A2B503C930C167/"
 LogInit: Base Directory: /run/media/alphaspectre/sda1/Unreal Engine/Instances/dev-5.4.4/Engine/Binaries/Linux/
 LogInit: Allocator: Mimalloc
 LogInit: Installed Engine Build: 1
 LogInit: This binary is optimized with LTO: no, PGO: no, instrumented for PGO data collection: no
 LogInit: Presizing for max 2097152 objects, including 1 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2025.04.29-03.54.08:466][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
-[2025.04.29-03.54.08:466][  0]LogConfig: Set CVar [[memory.MemoryPressureCriticalThresholdMB:512]]
-[2025.04.29-03.54.08:466][  0]LogInit: Unix hardware info:
-[2025.04.29-03.54.08:466][  0]LogInit:  - we are the first instance of this executable
-[2025.04.29-03.54.08:466][  0]LogInit:  - this process' id (pid) is 133663, parent process' id (ppid) is 8873
-[2025.04.29-03.54.08:466][  0]LogInit:  - we are not running under debugger
-[2025.04.29-03.54.08:466][  0]LogInit:  - machine network name is 'Grant-Linux'
-[2025.04.29-03.54.08:466][  0]LogInit:  - user name is 'alphaspectre' (alphaspectre)
-[2025.04.29-03.54.08:466][  0]LogInit:  - we're logged in locally
-[2025.04.29-03.54.08:466][  0]LogInit:  - we're running with rendering
-[2025.04.29-03.54.08:466][  0]LogInit:  - CPU: GenuineIntel 'Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz' (signature: 0x906EC)
-[2025.04.29-03.54.08:466][  0]LogInit:  - Number of physical cores available for the process: 8
-[2025.04.29-03.54.08:466][  0]LogInit:  - Number of logical cores available for the process: 8
-[2025.04.29-03.54.08:466][  0]LogInit:  - GPU Brand Info: NVIDIA GeForce RTX 2080 Ti (NVIDIA UNIX Open Kernel Module for x86_64  570.133.07  Release Build  (dvs-builder@U22-I3-G01-1-1)  Fri Mar 14 12:57:14 UTC 2025)
-[2025.04.29-03.54.08:466][  0]LogInit:  - Memory allocator used: Mimalloc
-[2025.04.29-03.54.08:466][  0]LogInit:  - This is an internal build.
-[2025.04.29-03.54.08:466][  0]LogCore: Skipped benchmarking clocks because the engine is running in a standalone program mode - CLOCK_MONOTONIC will be used.
-[2025.04.29-03.54.08:466][  0]LogInit: Unix-specific commandline switches:
-[2025.04.29-03.54.08:466][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
-[2025.04.29-03.54.08:466][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
-[2025.04.29-03.54.08:466][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
-[2025.04.29-03.54.08:466][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
-[2025.04.29-03.54.08:466][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
-[2025.04.29-03.54.08:466][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
-[2025.04.29-03.54.08:466][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
-[2025.04.29-03.54.08:466][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
-[2025.04.29-03.54.08:466][  0]LogInit:  -crashhandlerstacksize - Allows setting crash handler stack sizes (204800)
-[2025.04.29-03.54.08:466][  0]LogInit:  -noexclusivelockonwrite - disables marking files created by the engine as exclusive locked while the engine has them opened
-[2025.04.29-03.54.08:466][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
-[2025.04.29-03.54.08:466][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
-[2025.04.29-03.54.08:466][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
-[2025.04.29-03.54.08:466][  0]LogInit:  -allowsyscallfilterfile=PATH_TO_FILE - sets up a system call filter allow list. any invalid syscall in this list *will* cause a crash
-[2025.04.29-03.54.08:466][  0]LogInit:  - Physical RAM available (not considering process quota): 32 GB (32007 MB, 32775272 KB, 33561878528 bytes)
-[2025.04.29-03.54.08:466][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1
-[2025.04.29-03.54.08:466][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
-[2025.04.29-03.54.08:466][  0]LogInit:  - PageSize 4096
-[2025.04.29-03.54.08:466][  0]LogInit:  - BinnedPageSize 65536
-[2025.04.29-03.54.08:468][  0]LogUObjectArray: 475 objects as part of root set at end of initial load.
-[2025.04.29-03.54.08:468][  0]LogUObjectArray: 0 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
-[2025.04.29-03.54.08:468][  0]LogUObjectAllocator: 80424 out of 0 bytes used by permanent object pool.
-[2025.04.29-03.54.08:468][  0]LogUObjectArray: CloseDisregardForGC: 475/475 objects in disregard for GC pool
-[2025.04.29-03.54.08:468][  0]LogInit: Using OS detected language (en-US).
-[2025.04.29-03.54.08:468][  0]LogInit: Using OS detected locale (en-US).
-[2025.04.29-03.54.08:469][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so 'en' will be used for the language.
-[2025.04.29-03.54.08:493][  0]LogInit: Using OS detected language (en-US).
-[2025.04.29-03.54.08:493][  0]LogInit: Using OS detected locale (en-US).
-[2025.04.29-03.54.08:493][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
-[2025.04.29-03.54.08:493][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the locale.
-[2025.04.29-03.54.08:493][  0]LogPackageLocalizationCache: Processed 2 localized package path(s) for 1 prioritized culture(s) in 0.000029 seconds
-[2025.04.29-03.54.08:495][  0]CrashReportCoreLog: Display: Applying project settings from '/run/media/alphaspectre/sda1/Unreal Engine/Projects/Marketplace-Platformer/Saved/Crashes/ensureinfo-MarketPlatformer-pid-8873-BF50F92902934BE0AD7276B3AD66DC75/CrashReportClient.ini'.
-[2025.04.29-03.54.08:495][  0]CrashReportCoreLog: CrashReportClientVersion=1.0
-[2025.04.29-03.54.08:495][  0]CrashReportCoreLog: CrashReportReceiver disabled
-[2025.04.29-03.54.08:495][  0]CrashReportCoreLog: DataRouter disabled
-[2025.04.29-03.54.08:495][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
-[2025.04.29-03.54.08:495][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
-[2025.04.29-03.54.08:495][  0]LogCrashDebugHelper: DepotName: UE5
-[2025.04.29-03.54.08:495][  0]LogCrashDebugHelper: BuiltFromCL: 35576357
-[2025.04.29-03.54.08:495][  0]LogCrashDebugHelper: EngineVersion: 5.4.4-35576357+UE5
-[2025.04.29-03.54.08:495][  0]LogCrashDebugHelper: BuildVersion: UE5-CL-35576357
-[2025.04.29-03.54.09:499][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
-[2025.04.29-03.54.09:499][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
-[2025.04.29-03.54.09:499][  0]LogCore: Engine exit requested (reason: CrashReportClientApp RequestExit)
-[2025.04.29-03.54.09:499][  0]LogExit: Preparing to exit.
-[2025.04.29-03.54.09:532][  0]LogExit: Object subsystem successfully closed.
-[2025.04.29-03.54.09:532][  0]LogPakFile: Destroying PakPlatformFile
-[2025.04.29-03.54.09:533][  0]LogExit: Exiting.
-[2025.04.29-03.54.09:545][  0]Log file closed, 04/28/25 23:54:09
+[2025.04.29-19.42.29:467][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [Engine]
+[2025.04.29-19.42.29:467][  0]LogConfig: Set CVar [[memory.MemoryPressureCriticalThresholdMB:512]]
+[2025.04.29-19.42.29:467][  0]LogInit: Unix hardware info:
+[2025.04.29-19.42.29:467][  0]LogInit:  - we are the first instance of this executable
+[2025.04.29-19.42.29:467][  0]LogInit:  - this process' id (pid) is 32173, parent process' id (ppid) is 12066
+[2025.04.29-19.42.29:467][  0]LogInit:  - we are not running under debugger
+[2025.04.29-19.42.29:467][  0]LogInit:  - machine network name is 'Grant-Linux'
+[2025.04.29-19.42.29:467][  0]LogInit:  - user name is 'alphaspectre' (alphaspectre)
+[2025.04.29-19.42.29:467][  0]LogInit:  - we're logged in locally
+[2025.04.29-19.42.29:467][  0]LogInit:  - we're running with rendering
+[2025.04.29-19.42.29:467][  0]LogInit:  - CPU: GenuineIntel 'Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz' (signature: 0x906EC)
+[2025.04.29-19.42.29:467][  0]LogInit:  - Number of physical cores available for the process: 8
+[2025.04.29-19.42.29:467][  0]LogInit:  - Number of logical cores available for the process: 8
+[2025.04.29-19.42.29:467][  0]LogInit:  - GPU Brand Info: NVIDIA GeForce RTX 2080 Ti (NVIDIA UNIX Open Kernel Module for x86_64  570.133.07  Release Build  (dvs-builder@U22-I3-G01-1-1)  Fri Mar 14 12:57:14 UTC 2025)
+[2025.04.29-19.42.29:467][  0]LogInit:  - Memory allocator used: Mimalloc
+[2025.04.29-19.42.29:467][  0]LogInit:  - This is an internal build.
+[2025.04.29-19.42.29:467][  0]LogCore: Skipped benchmarking clocks because the engine is running in a standalone program mode - CLOCK_MONOTONIC will be used.
+[2025.04.29-19.42.29:467][  0]LogInit: Unix-specific commandline switches:
+[2025.04.29-19.42.29:467][  0]LogInit:  -ansimalloc - use malloc()/free() from libc (useful for tools like valgrind and electric fence)
+[2025.04.29-19.42.29:467][  0]LogInit:  -jemalloc - use jemalloc for all memory allocation
+[2025.04.29-19.42.29:467][  0]LogInit:  -binnedmalloc - use binned malloc  for all memory allocation
+[2025.04.29-19.42.29:467][  0]LogInit:  -filemapcachesize=NUMBER - set the size for case-sensitive file mapping cache
+[2025.04.29-19.42.29:467][  0]LogInit:  -useksm - uses kernel same-page mapping (KSM) for mapped memory (OFF)
+[2025.04.29-19.42.29:467][  0]LogInit:  -ksmmergeall - marks all mmap'd memory pages suitable for KSM (OFF)
+[2025.04.29-19.42.29:467][  0]LogInit:  -preloadmodulesymbols - Loads the main module symbols file into memory (OFF)
+[2025.04.29-19.42.29:467][  0]LogInit:  -sigdfl=SIGNAL - Allows a specific signal to be set to its default handler rather then ignoring the signal
+[2025.04.29-19.42.29:467][  0]LogInit:  -crashhandlerstacksize - Allows setting crash handler stack sizes (204800)
+[2025.04.29-19.42.29:467][  0]LogInit:  -noexclusivelockonwrite - disables marking files created by the engine as exclusive locked while the engine has them opened
+[2025.04.29-19.42.29:467][  0]LogInit:  -httpproxy=ADDRESS:PORT - redirects HTTP requests to a proxy (only supported if compiled with libcurl)
+[2025.04.29-19.42.29:467][  0]LogInit:  -reuseconn - allow libcurl to reuse HTTP connections (only matters if compiled with libcurl)
+[2025.04.29-19.42.29:467][  0]LogInit:  -virtmemkb=NUMBER - sets process virtual memory (address space) limit (overrides VirtualMemoryLimitInKB value from .ini)
+[2025.04.29-19.42.29:467][  0]LogInit:  -allowsyscallfilterfile=PATH_TO_FILE - sets up a system call filter allow list. any invalid syscall in this list *will* cause a crash
+[2025.04.29-19.42.29:467][  0]LogInit:  - Physical RAM available (not considering process quota): 32 GB (32006 MB, 32775012 KB, 33561612288 bytes)
+[2025.04.29-19.42.29:467][  0]LogInit:  - VirtualMemoryAllocator pools will grow at scale 1
+[2025.04.29-19.42.29:467][  0]LogInit:  - MemoryRangeDecommit() will be a no-op (re-run with -vmapoolevict to change)
+[2025.04.29-19.42.29:467][  0]LogInit:  - PageSize 4096
+[2025.04.29-19.42.29:467][  0]LogInit:  - BinnedPageSize 65536
+[2025.04.29-19.42.29:468][  0]LogUObjectArray: 475 objects as part of root set at end of initial load.
+[2025.04.29-19.42.29:468][  0]LogUObjectArray: 0 objects are not in the root set, but can never be destroyed because they are in the DisregardForGC set.
+[2025.04.29-19.42.29:468][  0]LogUObjectAllocator: 80424 out of 0 bytes used by permanent object pool.
+[2025.04.29-19.42.29:468][  0]LogUObjectArray: CloseDisregardForGC: 475/475 objects in disregard for GC pool
+[2025.04.29-19.42.29:469][  0]LogInit: Using OS detected language (en-US).
+[2025.04.29-19.42.29:469][  0]LogInit: Using OS detected locale (en-US).
+[2025.04.29-19.42.29:469][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so 'en' will be used for the language.
+[2025.04.29-19.42.29:495][  0]LogInit: Using OS detected language (en-US).
+[2025.04.29-19.42.29:495][  0]LogInit: Using OS detected locale (en-US).
+[2025.04.29-19.42.29:495][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the language.
+[2025.04.29-19.42.29:495][  0]LogTextLocalizationManager: No localization for 'en-US' exists, so 'en' will be used for the locale.
+[2025.04.29-19.42.29:495][  0]LogPackageLocalizationCache: Processed 2 localized package path(s) for 1 prioritized culture(s) in 0.000024 seconds
+[2025.04.29-19.42.29:496][  0]CrashReportCoreLog: Display: Applying project settings from '/run/media/alphaspectre/sda1/Unreal Engine/Projects/Marketplace-Platformer/Saved/Crashes/crashinfo-MarketPlatformer-pid-12066-0B5BF90C7D3F4D89B1A2B503C930C167/CrashReportClient.ini'.
+[2025.04.29-19.42.29:496][  0]CrashReportCoreLog: CrashReportClientVersion=1.0
+[2025.04.29-19.42.29:496][  0]CrashReportCoreLog: CrashReportReceiver disabled
+[2025.04.29-19.42.29:496][  0]CrashReportCoreLog: DataRouter disabled
+[2025.04.29-19.42.29:496][  0]LogInit: Initializing SDL.
+[2025.04.29-19.42.29:573][  0]LogInit: Initialized SDL 2.24.0 revision:  (compiled against 2.24.0)
+[2025.04.29-19.42.29:573][  0]LogInit: Using SDL video driver 'x11'
+[2025.04.29-19.42.29:594][  0]LogSlate: New Slate User Created. Platform User Id 0, User Index 0, Is Virtual User: 0
+[2025.04.29-19.42.29:594][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2025.04.29-19.42.29:596][  0]LogSlate: Using FreeType 2.10.0
+[2025.04.29-19.42.29:598][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2025.04.29-19.42.29:598][  0]LogInit: Using SDL_WINDOW_OPENGL
+[2025.04.29-19.42.29:728][  0]LogInit: FSlateOpenGLContext::Initialize - creating OpenGL 2.1 context
+[2025.04.29-19.42.29:756][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png' error.
+[2025.04.29-19.42.29:756][  0]LogSlateOpenGL: Could not find file for Slate texture: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png] '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_24x.png'
+[2025.04.29-19.42.29:756][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png' error.
+[2025.04.29-19.42.29:756][  0]LogSlateOpenGL: Could not find file for Slate texture: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png] '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png'
+[2025.04.29-19.42.29:756][  0]LogStreaming: Warning: Failed to read file '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png' error.
+[2025.04.29-19.42.29:756][  0]LogSlateOpenGL: Could not find file for Slate texture: [../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png] '../../../Engine/Platforms/VisionOS/Content/Editor/Slate/Launcher/Platform_VisionOS_128x.png'
+[2025.04.29-19.42.29:781][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2025.04.29-19.42.29:781][  0]CrashReportCoreLog: Initial state = Unknown UploadState value
+[2025.04.29-19.42.29:822][  0]LogInit: FSlateOpenGLContext::Initialize - creating OpenGL 2.1 context
+[2025.04.29-19.42.29:827][  0]LogSlate: Took 0.000495 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2025.04.29-19.42.29:829][  0]LogSlate: Took 0.000502 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2025.04.29-19.42.29:831][  0]LogSlate: Took 0.000577 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2025.04.29-19.42.34:540][  0]LogSlate: Request Window 'MarketPlatformer Crash Reporter' being destroyed
+[2025.04.29-19.42.34:540][  0]LogSlate: Window 'MarketPlatformer Crash Reporter' being destroyed
+[2025.04.29-19.42.34:542][  0]LogCore: Engine exit requested (reason: OnRequestExit)
+[2025.04.29-19.42.34:542][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
+[2025.04.29-19.42.34:542][  0]CrashReportCoreLog: Final state (Receiver) = Unknown UploadState value
+[2025.04.29-19.42.34:545][  0]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
+[2025.04.29-19.42.34:545][  0]LogCore: Engine exit requested (reason: CrashReportClientApp RequestExit; note: exit was already requested)
+[2025.04.29-19.42.34:545][  0]LogExit: Preparing to exit.
+[2025.04.29-19.42.34:569][  0]LogExit: Object subsystem successfully closed.
+[2025.04.29-19.42.34:569][  0]LogPakFile: Destroying PakPlatformFile
+[2025.04.29-19.42.34:569][  0]LogExit: Exiting.
+[2025.04.29-19.42.34:569][  0]LogInit: Tearing down SDL.
+[2025.04.29-19.42.34:579][  0]Log file closed, 04/29/25 15:42:34
