@@ -17,6 +17,8 @@ I then looked through the assets again, hoping to find something more interior f
 Now, a week into the process, and I got started on what would actually become the final project.
 If memory serves, it took a little over a month at a few hours a day before I called it done. And what's the end result?
 A 5 minute long platformer with spike pads, jump pads, and moving platforms with a visual style based on Control by Remedy Entertainment.
+<img width="1506" height="789" alt="image" src="https://github.com/user-attachments/assets/cdf73fea-0f61-436a-aff9-210441130328" />
+
 
 ## Mechanics
 Mechanics remained simple. Moving and jumping are the only inputs the player uses. The various pads are the real challenge.\
