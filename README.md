@@ -6,15 +6,15 @@ basic programming principles, apply basic game design, and be able to say "I mad
 
 ## The Goals
 This project was conceived with the intent of getting familiar with the UE5 workflow without overcomplicating it. In that pursuit,
-I was instructed to use markeplace assets to build it, and get experimental with lighting and mechanics. I used Blueprint for scripting since I'm a visual learner.
+I was instructed to use marketplace assets to build it, and get experimental with lighting and mechanics. I used Blueprint for scripting since I'm a visual learner.
 
 ## The Outcome
 To that end, I added as many free assets from the Unreal asset library as I could find and sifted through them afterward.
 I found a pre-made kit of structural pieces that look both sci-fi and steampunk, so I tried using that. It didn't go too well,
-since I didn't realize these were pieces of buildings meant to be used as exterior only set dressing. I qickly through that set away adn started over after a week.
+since I didn't realize these were pieces of buildings meant to be used as exterior only set dressing. I quickly through that set away and started over after a week.
 I then looked through the assets again, hoping to find something more interior focused to keep the scale of the game down. I ended up finding the [Modular Scifi](https://www.fab.com/listings/cb3c4494-4060-4a80-b079-e46936cb8dd0) pack for exactly that.
 
-Now, a week into the porcess, and I got started on what would actually become the final project.
+Now, a week into the process, and I got started on what would actually become the final project.
 If memory serves, it took a little over a month at a few hours a day before I called it done. And what's the end result?
 A 5 minute long platformer with spike pads, jump pads, and moving platforms with a visual style based on Control by Remedy Entertainment.
 
@@ -54,14 +54,14 @@ I decided to do the opposite, making it a black void, which when combined with p
 To fix the pit, and make it actually dark, I had two ideas. First was to make it deep enough to not be illuminated, and then put a hellish red light at the bottom,
 but that seemed impractical and I wasn't sure it would look very good. The second? Add fog. Fog in UE5 is versatile. It can be made thin to provide a haze effect,
 or it can be thickened until it's completely opaque. In this case, I wanted opaque. And with a little bit of tuning, despite being fairly close to the light source in the ceiling,
-it would have a gradual cutoff into pure darkness.\
+it would have a gradual cut-off into pure darkness.\
 <img width="826" height="356" alt="Screenshot_20260327_002207" src="https://github.com/user-attachments/assets/236135c8-9781-42b9-8482-4571f866cd2e" />
 
 ## Victory & Death
 After defining a fail state, I decided to add a death sequence. If the player falls into the pit, the camera cuts away to another camera attached to the wall of the chamber.
 <img width="845" height="444" alt="Screenshot_20260327_000119" src="https://github.com/user-attachments/assets/2bbc1e35-e026-459e-86fb-668db89bf814" />
 
-This camera oversees the entire chamber as a red light flahses intermittently before texting beings typing on-screen.\
+This camera oversees the entire chamber as a red light flashes intermittently before texting beings typing on-screen.\
 <img width="755" height="248" alt="Screenshot_20260326_235255" src="https://github.com/user-attachments/assets/fb1bed18-7082-419f-b89f-389e2883e22d" />
 
 The same occurs when a victory is achieved by reaching the end platform. The other platforms disappear, the music and sound effect cease, and after a few seconds of creepy silence, the platform disappears, making the player fall into the pit as different text types.
