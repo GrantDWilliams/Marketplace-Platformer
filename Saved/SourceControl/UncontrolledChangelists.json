@@ -5,6 +5,13 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"/home/grantdw/UnrealEngine/Projects/Marketplace-Platformer/Content/Platformer/Platformer_BuiltData.uasset",
+				"/home/grantdw/UnrealEngine/Projects/Marketplace-Platformer/Content/Platformer/Platformer.umap",
+				"/home/grantdw/UnrealEngine/Projects/Marketplace-Platformer/Content/Platformer/Blueprints/Lighting/BP_GlowPlane.uasset",
+				"/home/grantdw/UnrealEngine/Projects/Marketplace-Platformer/Content/Platformer/UI/Fonts/Minisystem.uasset",
+				"/home/grantdw/UnrealEngine/Projects/Marketplace-Platformer/Content/Platformer/UI/Fonts/Minisystem_Font.uasset",
+				"/home/grantdw/UnrealEngine/Projects/Marketplace-Platformer/Content/Platformer/UI/WBP_VictoryScreen.uasset",
+				"/home/grantdw/UnrealEngine/Projects/Marketplace-Platformer/Content/Platformer/UI/WBP_DeathScreen.uasset",
 				"/run/media/alphaspectre/sda1/Unreal Engine/Instances/dev-5.4.4/Engine/Content/BasicShapes/Plane.uasset",
 				"/run/media/alphaspectre/sda1/Unreal Engine/Projects/Marketplace-Platformer/Content/Platformer/Blueprints/BP_WallDoor.uasset",
 				"/run/media/alphaspectre/sda1/Unreal Engine/Projects/Marketplace-Platformer/Content/Platformer/Interfaces/BPI_DoorTrigger.uasset",
